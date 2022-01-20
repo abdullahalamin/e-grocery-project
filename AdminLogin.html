@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Admin Login</title>
+<meta charset=UTF-8>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="admin">
+	<div class="adminContainer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-4"></div>
+			<div class="col-sm-6 col-md-4">
+				<ul class="nav navbar-nav navbar-right">
+			      <li><a href="ContactUs.html">Contact Us</a></li>
+			      <li><a href="AdminLogin.html">Admin Login</a></li>
+			    </ul>
+				<div class="adminForm">
+					<h1> Admin Login</h1>
+					<form action="connect.php" method="POST">
+					    <div class="form-group">
+					      <label for="UserName">User Name</label>
+					      <br>
+					      <input type="form-text" class="form-control" name="username" id="name" aria-describedby="userName" placeholder="Enter User Name" required>
+					  	</div>
+					      <br>
+						<div class="form-group">
+					      	<label for="exampleInputPassword1">Password</label>
+					    	<input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+					    	<br>
+					    	<div id="mySpan" style="color:red;"></div>
+							<input type="checkbox" name="spass" id=showpass>
+							<label for="Show pass">Show password</label>
+					  	</div>
+						
+					      
+					    
+					    <button type="submit" name="submit" class="btn btn-primary btn-block ">Submit</button>
+						  
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+</html>
+

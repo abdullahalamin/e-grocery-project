@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <link rel="icon" type="image/jpg" href="images/icon.jpg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<style>
+.imgcontainer .img
+{
+  max-height: 10%;
+  max-width: 10%;
+}
+body {
+  
+  font-size: 12px;
+}
+body{
+  background-image: url("e-grocery image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: auto;
+
+}
+
+label a
+{
+  float: right;
+  color: lightgreen;
+}
+
+input[type=text]:focus, input[type=password]:focus{
+  border-radius: 2px;
+  outline: solid lightgreen;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+  background-image: linear-gradient(to right, #5f27cd,#ee5253);
+  color: #f5f6fa ;
+  border-radius: 50px;
+}
+
+
+.textcontainer button, .bottomcontainer button 
+{
+  background-image: linear-gradient(to right, #5f27cd,#ee5253);
+  color: #f5f6fa;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.imgcontainer button
+{
+  
+  color: #f5f6fa;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+.cancelbtn {
+  width: auto;
+  padding: 5px auto;
+  background-color: #f44336;
+  position: relative;
+  float:right;
+
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 12px 0 12px 0;
+  position: relative;
+  max-height: 200px;
+
+}
+
+
+.textcontainer
+{
+  color: #f5f6fa;
+  padding: 0 40px 40px 40px;
+  border-radius:5px;
+  margin: 100px auto auto;
+
+}
+.bottomcontainer
+{
+  color: #f5f6fa;
+  padding: 0 40px 40px 40px;
+  border-radius:5px;
+  
+
+}
+
+span.psw {
+  float:left;
+  
+}
+
+
+.modal-content h2{
+  text-align: center;
+
+}
+
+#loginmodal
+{
+  background-color: #130f40;
+  color: white;
+  position: relative;
+  margin: 2% 35%; 
+  border-radius: 5px;
+  border: solid #FC427B;
+  max-width: 350px;
+  min-width: 250px;
+  opacity: 0.9;
+  float: left;
+}
+
+#regmodal
+{
+  display:none;
+  background-color: #130f40;
+  color: white;
+  position: relative;
+  margin: 2% 35%; 
+  border-radius: 5px;
+  border: solid #FC427B;
+  max-width: 350px;
+  min-width: 250px;
+  opacity: 0.9;
+  float: left;
+}
+
+.imgcontainer button
+{
+  width: auto;
+  padding: 5px auto;
+  
+  position: relative;
+  left: 30%;
+  float:left;
+  border-radius: 20px;
+}
+
+
+/*#loginbtn
+{
+  width: auto;
+  padding: 5px auto;
+  background-color: #f44336;
+  position: relative;
+  left: 20%;
+  float:left;
+  border-radius: 20px;
+
+}*/
+
+
+
+
+/*.animate {
+  -webkit-animation: animatezoom 0.6s;
+   animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom 
+{
+  from {-webkit-transform: scale(0);} 
+  to {-webkit-transform: scale(1);}
+}*/
+
+.sidenav 
+{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #e55d87; 
+  background: -webkit-linear-gradient(to right, #e55d87, #5fc3e4); 
+  background: linear-gradient(to right, #e55d87, #5fc3e4);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a 
+{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.btn:hover,.active
+{
+  color: #f1f1f1;
+  background-color: purple; 
+}
+
+/*.active
+{
+  color: #f1f1f1;
+  background-color: red;
+}
+*/
+.sidenav .closebtn 
+{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+
+</style>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a class="btn" href="Popular.html"><img class="navicon" src="images/icons/PopularIcon.png" style="width:20px";>Popular Products</a>
+    <!-- <a class="btn" href="#5"><img class="navicon" src="images/icons/DailyIcon.png" style="width:20px";>Daily Essentials</a> -->
+    <a class="btn" href="Hygiene.html"><img class="navicon" src="images/icons/COVID19Icon.png" style="width:20px";>Hygiene</a>
+    <a class="btn" href="#7"><img class="navicon" src="images/icons/FruitsIcon.png" style="width:20px";>Fresh Fruits</a>
+    <a class="btn" href="#7"><img class="navicon" src="images/icons/FoodIcon.png" style="width:20px";>Breakfast</a>
+    <a class="btn" href="JamAndSpreads.html"><img class="navicon" src="images/icons/SnackIcon.png" style="width:20px";>Jam & Spreads</a>
+    <a class="btn" href="#9"><img class="navicon" src="images/icons/DrinksIcon.png" style="width:20px";>Drinks & Beverages</a>
+    <a class="btn" href="#10"><img class="navicon" src="images/icons/BabyIcon.png" style="width:20px";>Baby Care</a>
+    <!-- <a class="btn" href="#11"><img class="navicon" src="images/icons/BodyCareIcon.png" style="width:20px";>Body Care</a> -->
+    <a class="btn" href="#12"><img class="navicon" src="images/icons/HomeCleaningIcon.png" style="width:20px";>Home & Cleaning</a>
+    <a class="btn" href="#13"><img class="navicon" src="images/icons/StationeryIcon.png" style="width:20px";>Stationery</a>
+    <a class="btn" href="ProductRequest.html"><img class="navicon" style="width:20px";>Product Request</a>
+  </div>  
+<div id="maincontainer" class="Logincontainer">
+  <div id="container" class="container">
+    <div class="nav-bar">
+      <div class="e-groceryLogo">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <a href="Home.html" target="_self"><img src="images/e-grocery_logo2.png" width = "125px"></a>
+      </div>
+    <nav id="top-nav">
+      <ul>
+        <li><a class="btn" href="Home.html" target="_self">Home </a></li>
+        <li><a class="btn" href="#1">About </a></li>
+        <li><a class="btn" href="ContactUs.html">Contact Us </a></li>
+        <li><a onclick="myFunction()" class="dropbtn active">Sign In<span>&#9662;</span> </a>
+          <div id="SignInDropdown" class="dropdown-content">
+              <a href="Login.html">User</a>
+              <a href="AdminLogin.html">Admin</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <a href="#"><img src="images/carticon.jpg" width="50px" height="50px"></a>
+    </div>
+  </div>
+
+
+<div id="login" class="modal">
+  
+  
+  <form id ="loginmodal"class="modal-content animate" action="/action_page.php" method="post">
+    
+    
+    <div class="imgcontainer">
+      <!--<span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>-->
+      <button id="loginbtn" type="button" onclick="displaylogin()" style="background-color:purple";>Login</button>
+      <button id="regbtn" type="button" onclick="displayreg()" style="background-color:black";>Register</button>  
+      
+      
+    </div>
+
+    <div class="textcontainer">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit"><strong>Sign In</strong></button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <br>
+    
+    </div>
+    
+    <div class="bottomcontainer" style="background-color:#130f40">
+      
+      <br>
+      <span class="psw">Forgot password? <a href="#" style="color:red">Click Here</a></span>
+    </div>
+    
+  </form>
+</div>
+
+<div id="reg" class="modal">
+  
+  
+  <form id="regmodal"class="modal-content animate" action="/action_page.php" method="post">
+    
+    
+    <div class="imgcontainer">
+      <!--<span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>-->
+      <button id="loginbtn" type="button" onclick="displaylogin()" style="background-color:black";>Login</button>
+      <button id="regbtn" type="button" onclick="displayreg()" style="background-color:purple";>Register</button>  
+      
+      
+    </div>
+
+    <div class="textcontainer">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="email"><b>E-mail</b></label>
+      <input type="text" placeholder="E-mail Address" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <label for="psw"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit"><strong>Register</strong></button>
+      
+      <br>
+      
+
+    </div>
+    
+    
+    
+  </form>
+</div>
+</div>
+
+<script src="script.js"></script> 
+
+<script>
+  function displayreg()
+  {
+    var regmodal = document.getElementById("regmodal");
+    var loginmodal = document.getElementById("loginmodal");
+    var regbtn = document.getElementById("regbtn");
+    var loginbtn = document.getElementById("loginbtn");
+
+    regmodal.style.display = "block";
+    loginmodal.style.display = "none";
+    
+
+  }
+  function displaylogin()
+  {
+    var regmodal = document.getElementById("regmodal");
+    var loginmodal = document.getElementById("loginmodal");
+    var regbtn = document.getElementById("regbtn");
+    var loginbtn = document.getElementById("loginbtn");
+
+    regmodal.style.display = "none";
+    loginmodal.style.display = "block";
+
+
+
+
+  }
+</script>
+
+<!-- Code injected by live-server
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]> -->
+</script></body>
+</html>

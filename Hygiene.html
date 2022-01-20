@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hygiene</title>
+		<link rel="icon" type="image/jpg" href="images/icon.jpg">
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+			rel="stylesheet">
+			<style>
+				#loading
+				{
+					overflow: hidden;
+					position: fixed;
+					width: 100%;
+					height: 100vh; 
+					background: #001d30 url("images/loading4.gif") no-repeat center;
+					z-index: 1000;
+					background-size: 40%;
+				
+				}
+				#body
+				{
+					overflow: hidden; 
+				}
+			</style>
+		</head>
+		<body id="body">
+			<div id="loading"></div>
+			<div class="scrollbtn">
+				<button id=topbtn onclick="topFunction()">&#9650;</button>
+			</div>
+		<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a class="btn" href="Popular.html"><img class="navicon" src="images/icons/PopularIcon.png" style="width:20px";>Popular Products</a>
+	  <!-- <a class="btn" href="#5"><img class="navicon" src="images/icons/DailyIcon.png" style="width:20px";>Daily Essentials</a> -->
+	  <a class="btn active" href="Hygiene.html"><img class="navicon" src="images/icons/COVID19Icon.png" style="width:20px";>Hygiene</a>
+	  <a class="btn" href="FreshFruits.html"><img class="navicon" src="images/icons/FruitsIcon.png" style="width:20px";>Fresh Fruits</a>
+	  <a class="btn" href="#7"><img class="navicon" src="images/icons/FoodIcon.png" style="width:20px";>Breakfast</a>
+	  <a class="btn" href="#8"><img class="navicon" src="images/icons/SnackIcon.png" style="width:20px";>Snacks & Spread</a>
+	  <a class="btn" href="#9"><img class="navicon" src="images/icons/DrinksIcon.png" style="width:20px";>Drinks & Beverages</a>
+	  <a class="btn" href="#10"><img class="navicon" src="images/icons/BabyIcon.png" style="width:20px";>Baby Care</a>
+	  <!-- <a class="btn" href="#11"><img class="navicon" src="images/icons/BodyCareIcon.png" style="width:20px";>Body Care</a> -->
+	  <a class="btn" href="#12"><img class="navicon" src="images/icons/HomeCleaningIcon.png" style="width:20px";>Home & Cleaning</a>
+	  <a class="btn" href="#13"><img class="navicon" src="images/icons/StationeryIcon.png" style="width:20px";>Stationery</a>
+	</div>
+			<div id="maincontainer" class="topcontainer">
+				<div id="container" class="container">
+					<div class="nav-bar">
+						<div class="e-groceryLogo">
+							<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+							<a href="Home.html" target="_self"><img src="images/e-grocery_logo2.png" width = "125px"></a>
+						</div>
+						<nav id="top-nav">
+							<ul>
+							<li><a class="btn active" href="Home.html" target="_self">Home</a></li>
+							<li><a class="btn" href="#1">About</a></li>
+							<li><a class="btn" href="ContactUs.html">Contact Us</a></li>
+							<li><a onclick="myFunction()" class="dropbtn">Sign In </a>
+								<div id="SignInDropdown" class="dropdown-content">
+								    <a href="Login.html">User</a>
+								    <a href="AdminLogin.html">Admin</a>
+								</div>
+							</li>
+
+			</ul>
+						</nav>
+						<a href="#"><img src="images/carticon.jpg" width="50px" height="50px"></a>
+					</div>
+					
+					<div class="popularrow">
+						<div class="popularcol">
+							<div class="popular">
+								<h3>Hygiene</h3>
+								<div class="img"><img src="images/Hygiene header.jpg" width="300px" height="250px"></div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="small-container">
+							<div class="product-row">
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/aci-aerosol-insect-spray-475-ml.jpg">
+									<h4>ACI Aerosol Insect Spray</h4>
+									<p>475 ml</p>
+									<p> Tk.305</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/aci-savlon-liquid-antiseptic-1000-ml.jpg">
+									<h4>ACI Savlon Liquid Antiseptic</h4>
+									<p>1000 ml</p>
+									<p> Tk.220</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/aci-savlon-liquid-antiseptic-500-ml.jpg">
+									<h4>ACI Savlon Liquid Antiseptic</h4>
+									<p>500 ml</p>
+									<p> Tk.125</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/aci-savlon-ocean-blue-antiseptic-handwash-refill-200-ml.jpg">
+									<h4>ACI Savlon Ocean Blue Antiseptic Handwash Refill</h4>
+									<p>200 ml</p>
+									<p> Tk.60</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/aci-savlon-ocean-blue-handwash-500-ml.jpg">
+									<h4>ACI Savlon Ocean Blue Handwash</h4>
+									<p>500 ml</p>
+									<p> Tk.150</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/alcohol-pad-100-pcs.jpg">
+									<h4>Alcohol Pad</h4>
+									<p>100 pcs</p>
+									<p> Tk.79</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/almer-hand-sanitizer-50-ml.jpg">
+									<h4>Almer Hand Sanitizer</h4>
+									<p>50 ml</p>
+									<p> Tk.160</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/almer-toilet-seat-sanitizer-50-ml.jpg">
+									<h4>Almer Toilet Seat Sanitizer</h4>
+									<p>50 ml</p>
+									<p> Tk.150</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/baby-mask-20-pcs.jpg">
+									<h4>Baby Mask</h4>
+									<p>20 pcs</p>
+									<p> Tk.459</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/colgate-plax-freshmint-mouth-wash-750-ml.jpg">
+									<h4>Colgate Plax Freshmint Mouth Wash</h4>
+									<p>750 ml</p>
+									<p> Tk.800</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/colgate-plax-herbal-salt-mouth-wash-500-ml.jpg">
+									<h4>Colgate Plax Herbal Salt Mouth Wash</h4>
+									<p>500 ml</p>
+									<p> Tk.599</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/colgate-plax-peppermint-mouth-wash-750-ml.jpg">
+									<h4>Colgate Plax Peppermint Mouth Wash</h4>
+									<p>750 ml</p>
+									<p> Tk.800</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/colgate-plax-peppermint-mouth-wash-500-ml.jpg">
+									<h4>Colgate Plax Peppermint Mouth Wash</h4>
+									<p>500 ml</p>
+									<p> Tk.509</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/dabur-hand-sanitize-60-ml.jpg">
+									<h4>Dabur Hand Sanitize</h4>
+									<p>60 ml</p>
+									<p> Tk.90</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/dabur-surokkha-pack-4-kit.jpg">
+									<h4>Dabur Surokkha Pack 4 Kit</h4>
+									<p></p>
+									<p> Tk.250</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/dettol-anti-bacterial-wet-wipes-10-pcs.jpg">
+									<h4>Dettol Anti Bacterial Wet Wipes</h4>
+									<p>10 pcs</p>
+									<p> Tk.75</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/dettol-antiseptic-liquid-brown-single-pack-100-ml.jpg">
+									<h4>Dettol Antiseptic Liquid (Brown) Single Pack</h4>
+									<p>100 ml</p>
+									<p> Tk.52</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/dettol-antiseptic-liquid-brown-single-pack-50-ml.jpg">
+									<h4>Dettol Antiseptic Liquid (Brown) Single Pack</h4>
+									<p>50 ml</p>
+									<p> Tk.38</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/dettol-instant-hand-sanitizer-made-in-thailand-50-ml.jpg">
+									<h4>Dettol Instant Hand Sanitizer (Made in Thailand)</h4>
+									<p>50 ml</p>
+									<p> Tk.145</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/disposable-vinyl-gloves-pack-l-1-pcs.jpg">
+									<h4>Disposable Vinyl Gloves Pack (L)</h4>
+									<p>each</p>
+									<p> Tk.999</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/face-mask-surgical-disposable-50-pcs.jpg">
+									<h4>Face Mask Surgical Disposable</h4>
+									<p>50 pcs</p>
+									<p> Tk.189</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/face-shield-1-pcs.jpg">
+									<h4>Face Shield</h4>
+									<p>each</p>
+									<p> Tk.149</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/godrej-protekt-green-hand-wash-170-ml.jpg">
+									<h4>Godrej Protekt (Green) Hand Wash</h4>
+									<p>170 ml</p>
+									<p> Tk.50</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/godrej-protekt-disinfectant-surface-wipes-30-pcs.jpg">
+									<h4>Godrej Protekt Disinfectant Surface Wipes</h4>
+									<p>30 pcs</p>
+									<p> Tk.160</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/godrej-protekt-instant-hand-sanitizer-50-ml.jpg">
+									<h4>Godrej Protekt Instant Hand Sanitizer</h4>
+									<p>50 ml</p>
+									<p> Tk.80</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/godrej-protekt-multi-purpose-aqua-disinfectant-liquid-500-ml.jpg">
+									<h4>Godrej Protekt Multi Purpose Aqua Disinfectant Liquid</h4>
+									<p>500 ml</p>
+									<p> Tk.149</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/godrej-protekt-multi-purpose-citrus-disinfectant-liquid-500-ml.jpg">
+									<h4>Godrej Protekt Multi Purpose Citrus Disinfectant Liquid</h4>
+									<p>500 ml</p>
+									<p> Tk.149</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/hexisol-hand-rub-250-ml.jpg">
+									<h4>Hexisol Hand Rub</h4>
+									<p>250 ml</p>
+									<p> Tk.130</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/hexisol-hand-rub-50-ml.jpg">
+									<h4>Hexisol Hand Rub</h4>
+									<p>50 ml</p>
+									<p> Tk.40</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/kn95-face-mask-1-pcs.jpg">
+									<h4>KN95 Face Mask</h4>
+									<p>each</p>
+									<p> Tk.59</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/kn95-vent-air-mask-1-pcs.jpg">
+									<h4>KN95 Vent Air Mask</h4>
+									<p>each</p>
+									<p> Tk.109</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/lifebuoy-hand-sanitizer-50-ml.jpg">
+									<h4>Lifebuoy Hand Sanitizer</h4>
+									<p>50 ml</p>
+									<p> Tk.80</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/lifebuoy-hand-sanitizer-100-ml.jpg">
+									<h4>Lifebuoy Hand Sanitizer</h4>
+									<p>100 ml</p>
+									<p> Tk.130</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/lifebuoy-hand-wash-total-480-ml.jpg">
+									<h4>Lifebuoy Hand Wash Total</h4>
+									<p>480 ml</p>
+									<p> Tk.175</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/lifebuoy-handwash-total-pump-200-ml.jpg">
+									<h4>Lifebuoy Handwash Total Pump</h4>
+									<p>200 ml</p>
+									<p> Tk.95</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/lizol-floor-cleaner-citrus-disinfectant-surface-500-ml.jpg">
+									<h4>Lizol Floor Cleaner Citrus Disinfectant Surface</h4>
+									<p>500 ml</p>
+									<p> Tk.140</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/mediker-safelife-hand-sanitizer-75-ml.jpg">
+									<h4>Mediker SafeLife Hand Sanitizer</h4>
+									<p>75 ml</p>
+									<p> Tk.110</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/mediker-safelife-handwash-refill-170-ml.jpg">
+									<h4>Mediker SafeLife Handwash Refill</h4>
+									<p>170 ml</p>
+									<p> Tk.55</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/oral-b-3d-white-mouth-wash-500-ml.jpg">
+									<h4>Oral-B 3D White Mouth Wash</h4>
+									<p>500 ml</p>
+									<p> Tk.695</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/oxyclean-disinfectant-spray-500-ml.jpg">
+									<h4>Oxyclean Disinfectant Spray</h4>
+									<p>500 ml</p>
+									<p> Tk.230</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/oxyclean-disinfectant-spray-100-ml.jpg">
+									<h4>Oxyclean Disinfectant Spray</h4>
+									<p>100 ml</p>
+									<p> Tk.150</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/oxyclean-multipurpose-spray-400-ml.jpg">
+									<h4>Oxyclean Multipurpose Spray</h4>
+									<p>400 ml</p>
+									<p> Tk.230</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/pearl-drops-smokers-mouth-wash-400-ml.jpg">
+									<h4>Pearl Drops Smokers Mouth Wash</h4>
+									<p>400 ml</p>
+									<p> Tk.695</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/saba-vegetable-washing-liquid-125-ml.jpg">
+									<h4>Saba Vegetable Washing Liquid</h4>
+									<p>125 ml</p>
+									<p> Tk.275</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/safety-goggles-protective-eye-wear-1-pcs.jpg">
+									<h4>Safety Goggles Protective Eye Wear</h4>
+									<p>each</p>
+									<p> Tk.104</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/savlon-disinfectant-spray-300-ml.jpg">
+									<h4>Savlon Disinfectant Spray</h4>
+									<p>300 ml</p>
+									<p> Tk.350</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/savlon-disinfectant-spray-125-ml.jpg">
+									<h4>Savlon Disinfectant Spray</h4>
+									<p>125 ml</p>
+									<p> Tk.150</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/savlon-hand-sanitizer-50-ml.jpg">
+									<h4>Savlon Hand Sanitizer</h4>
+									<p>50 ml</p>
+									<p> Tk.80</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/savlon-instant-hand-sanitizer-200-ml.jpg">
+									<h4>Savlon Instant Hand Sanitizer</h4>
+									<p>200 ml</p>
+									<p> Tk.200</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/savlon-pen-sanitizer-10-ml.jpg">
+									<h4>Savlon Pen Sanitizer</h4>
+									<p>10 ml</p>
+									<p> Tk.70</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/scotchbrite-heavy-kitchen-rubber-gloves-1-pair.jpg">
+									<h4>ScotchBrite Heavy Kitchen Rubber Gloves 1 Pair</h4>
+									<p></p>
+									<p> Tk.325</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/sepnil-disinfectant-spray-300-ml.jpg">
+									<h4>Sepnil Disinfectant Spray</h4>
+									<p>300 ml</p>
+									<p> Tk.350</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/sepnil-instant-hand-sanitizer-200-ml.jpg">
+									<h4>Sepnil Instant Hand Sanitizer</h4>
+									<p>200 ml</p>
+									<p> Tk.200</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/sepnil-instant-hand-sanitizer-40-ml.jpg">
+									<h4>Sepnil Instant Hand Sanitizer</h4>
+									<p>40 ml</p>
+									<p> Tk.80</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/smc-germ-kill-instant-hand-sanitizer-50-ml.jpg">
+									<h4>SMC Germ Kill Instant Hand Sanitizer</h4>
+									<p>50 ml</p>
+									<p> Tk.80</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/smc-germ-kill-instant-hand-sanitizer-tube-50-ml.jpg">
+									<h4>SMC Germ Kill Instant Hand Sanitizer Tube</h4>
+									<p>50 ml</p>
+									<p> Tk.80</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/stay-safe-travel-pack.jpg">
+									<h4>Stay Safe Travel Pack</h4>
+									<p></p>
+									<p> Tk.500</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/vah-hand-sanitizer-50-ml.jpg">
+									<h4>Vah Hand Sanitizer</h4>
+									<p>50 ml</p>
+									<p> Tk.90</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								
+							</div>
+						</div>
+						<script src="script.js"></script>
+						
+					</body>
+				</html>

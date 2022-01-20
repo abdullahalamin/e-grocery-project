@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>e-grocery | Shopping rediscovered</title>
+	<link rel="icon" type="image/jpg" href="images/icon.jpg">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<style>
+		#loading
+		{
+			overflow: hidden;
+			position: fixed;
+			width: 100%;
+			height: 100vh; 
+			background: #001d30 url("images/loading4.gif") no-repeat center;
+			z-index: 1000;
+			background-size: 40%;
+			
+		}
+		#body
+		{
+			overflow: hidden; 
+		}
+	</style>
+</head>
+<body id="body">
+	<div id="loading"></div>
+	<div class="scrollbtn">
+		<button id=topbtn onclick="topFunction()">&#9650;</button>
+	</div>
+	
+
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a class="btn" href="Popular.html"><img class="navicon" src="images/icons/PopularIcon.png" style="width:20px";>Popular Products</a>
+	  <!-- <a class="btn" href="#5"><img class="navicon" src="images/icons/DailyIcon.png" style="width:20px";>Daily Essentials</a> -->
+	  <a class="btn" href="Hygiene.html"><img class="navicon" src="images/icons/COVID19Icon.png" style="width:20px";>Hygiene</a>
+	  <a class="btn" href="FreshFruits.html"><img class="navicon" src="images/icons/FruitsIcon.png" style="width:20px";>Fresh Fruits</a>
+	  <a class="btn" href="Breakfast.html"><img class="navicon" src="images/icons/FoodIcon.png" style="width:20px";>Breakfast</a>
+	  <a class="btn" href="JamAndSpreads.html"><img class="navicon" src="images/icons/SnackIcon.png" style="width:20px";>Jam & Spreads</a>
+	  <a class="btn" href="#9"><img class="navicon" src="images/icons/DrinksIcon.png" style="width:20px";>Drinks & Beverages</a>
+	  <a class="btn" href="#10"><img class="navicon" src="images/icons/BabyIcon.png" style="width:20px";>Baby Care</a>
+	  <!-- <a class="btn" href="#11"><img class="navicon" src="images/icons/BodyCareIcon.png" style="width:20px";>Body Care</a> -->
+	  <a class="btn" href="#12"><img class="navicon" src="images/icons/HomeCleaningIcon.png" style="width:20px";>Home & Cleaning</a>
+	  <a class="btn" href="#13"><img class="navicon" src="images/icons/StationeryIcon.png" style="width:20px";>Stationery</a>
+	  <a class="btn" href="ProductRequest.html"><img class="navicon" style="width:20px";>Product Request</a>
+	</div>
+<div id="maincontainer" class="homepage">
+<div id="maincontainer" class="homecontainer">
+	<div id="container" class="container">
+		<div class="nav-bar">
+			<div class="e-groceryLogo">
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+				<a href="Home.html" target="_self"><img src="images/e-grocery_logo2.png" width = "125px"></a>
+			</div>
+		<nav id="top-nav">
+			<ul>
+				<li><a class="btn active" href="Home.html" target="_self">Home</a></li>
+				<li><a class="btn" href="#1">About</a></li>
+				<li><a class="btn" href="ContactUs.html">Contact Us</a></li>
+				<li><a onclick="myFunction()" class="dropbtn">Sign In<span>&#9662;</span> </a>
+					<div id="SignInDropdown" class="dropdown-content">
+					    <a href="Login.html">User</a>
+					    <a href="AdminLogin.html">Admin</a>
+					</div>
+				</li>
+
+			</ul>
+		</nav>
+		<a href="#"><img src="images/carticon.jpg" width="50px" height="50px"></a>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col">
+			<div class="searchcontainer">
+			  <form id="form">
+				<h2>Search by type:</h2>
+				<label class="radio-inline">
+				  <input type="radio" name="optradio" checked>Category
+				</label>
+				<label class="radio-inline">
+				  <input type="radio" name="optradio">Product
+				</label>
+				<label class="radio-inline">
+				  <input type="radio" name="optradio">Brand
+				</label>
+			  </form>
+				<form id="Search">
+					<input type="text" name="search" placeholder="Search for a product..">
+					<button>Search</button>
+				</form>
+			</div>
+
+			
+
+		</div>
+	
+	</div>
+</div>
+
+	<div class="row">
+		<div class="col">
+			<div class="FeaturedProducts">
+			  <div class="title">
+				<h2>COVID 19 Essentials</h2>
+			  </div>
+			  <div class="product">
+						<div class="small-container">
+							<div class="product-row">
+								<div class="product-col-4">
+									<img src="images/HomePage Images/ACI Savlon Antiseptic Hospital.jpg">
+									<h4>ACI Savlon Antiseptic Hospital Concentrate Liquid Jar</h4>
+									<p>5 Ltr</p>
+									<p> Tk.1745</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/HomePage Images/ACI Savlon Antiseptic Liquid.jpg">
+									<h4>ACI Savlon Antiseptic Liquid</h4>
+									<p>1 Ltr</p>
+									<p> Tk.220</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/HomePage Images/ACI Savlon Instant Hand Sanitizer.jpg">
+									<h4>ACI Savlon Instant Hand Sanitizer</h4>
+									<p>50 ml</p>
+									<p> Tk.80</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/HomePage Images/Cinthol Soap.jpg">
+									<h4>Godrej Cinthol & Protekt Combo Offer</h4>
+									<p>Each Combo</p>
+									<p> Tk.271</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/face-mask-surgical-disposable-50-pcs.jpg">
+									<h4>Face Mask Surgical Disposable</h4>
+									<p>50 pcs</p>
+									<p> Tk.189</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/face-shield-1-pcs.jpg">
+									<h4>Face Shield</h4>
+									<p>each</p>
+									<p> Tk.149</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/hexisol-hand-rub-50-ml.jpg">
+									<h4>Hexisol Hand Rub</h4>
+									<p>50 ml</p>
+									<p> Tk.40</p>
+									<button class="button">Add to Cart</button>
+								</div>
+								<div class="product-col-4">
+									<img src="images/img/Hygiene/kn95-face-mask-1-pcs.jpg">
+									<h4>KN95 Face Mask</h4>
+									<p>each</p>
+									<p> Tk.59</p>
+									<button class="button">Add to Cart</button>
+								</div>
+
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+				
+			</div>
+
+			
+
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<div class="procedure">
+			  <div class="title">
+				<h2>Process-3 Easy Steps</h2>
+			  </div>
+			  <div class="row">
+				<div class="col">
+					<div class="processContainer">
+						<div class="process">
+			  				<img src="images/HomePage Images/PlaceOrder.jpg" width="100px";>
+			  				<p>1. Place your Order</p>
+			  			</div>
+			  			<div class="process">
+			  				<img src="images/HomePage Images/PayOnline.jpg" width="100px";>
+			  				<p>2. Pay Online from anywhere</p>
+			  			</div>
+			  			<div class="process">
+			  				<img src="images/HomePage Images/Delivery.jpg" width="100px";>
+			  				<p>3. Receive delivery at your door steps</p>
+			  			</div>
+			  		</div>
+			  	</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="Chatbox">
+		<button class="open-button" onclick="openForm()">Message</button>
+
+		<div class="chat-popup" id="myForm">
+		  <form action="/action_page.php" class="form-container">
+		    <h1>Chat</h1>
+
+		    <label for="msg"><b>Message</b></label>
+		    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+		    <button type="submit" class="btn">Send</button>
+		    <button type="button" class="btn cancel" onclick="closeForm()">Message</button>
+		  </form>
+		</div>
+	</div>
+	<footer class="footer">
+  		<div class="footerContainer">
+  			<div class="row">
+  				<div class="footer-col">
+					<div class="e-groceryLogo">
+						<a href="Home.html" target="_self"><img src="images/e-grocery_logo2.png" width = "125px"></a>
+					</div>
+  					<ul>
+  						<li><a href="#">About Us</a></li>
+  						<li><a href="#">Our Services</a></li>
+  						<li><a href="#">Privacy Policy</a></li>
+  					</ul>
+  				</div>
+  				<div class="footer-col">
+  					<h4>Get Help</h4>
+  					<ul>
+  						<li><a href="#">FAQs</a></li>
+  						<li><a href="#">Shipping</a></li>
+  						<li><a href="#">Returns</a></li>
+  					</ul>
+  				</div>
+  				<div class="footer-col">
+  					<h4>Follow Us</h4>
+  					<div class="Links">
+  						<a href="#"><i class="fab fa-facebook-f"></i></a>
+  						<a href="#"><i class="fab fa-twitter"></i></a>
+  						<a href="#"><i class="fab fa-instagram"></i></a>
+  						<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  				</div>
+  				
+  			</div>
+  		</div>
+  				
+	</div>
+
+	
+</div>
+
+<script>
+	// var loader = document.getElementById('loading');
+	// function loadfunction()
+	// {
+	// 	const sleeptime = setTimeout(preloadfunction, 3000);
+	// }
+	// function preloadfunction()
+	// {
+	// 	loader.style.display = "none";
+	// }
+</script>
+<script src="script.js"></script>
+
+</body> 
+
+</html>

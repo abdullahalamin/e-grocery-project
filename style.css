@@ -1,0 +1,701 @@
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.e-groceryLogo img
+{
+  border: 0.05vw solid red;
+  border-radius: 15%;
+  position: relative;
+  bottom: 25%;
+  margin-left: 10px;
+  vertical-align: middle;
+  
+}
+.e-groceryLogo span
+{
+  color: white;
+}
+
+.nav-bar
+{
+  position: sticky;
+  top: 0;
+  background: #e55d87; 
+  background: -webkit-linear-gradient(to right, #e55d87, #5fc3e4); 
+  background: linear-gradient(to right, #e55d87, #5fc3e4);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  transition: 0.4s;
+  z-index: 99;
+  
+}
+
+nav
+{
+  flex: 1;
+  text-align: right;
+}
+
+nav ul
+{
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li
+{
+  display: inline-block;
+  margin: 25px;
+}
+
+nav ul li a
+{
+  text-decoration: none;
+  color: #ffffff;
+  padding: 20px 20px;
+
+}
+nav ul li a:hover
+{
+  background-color: purple;
+}
+
+.container
+{
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.popular .img
+{
+  
+  padding-left: 40%;
+  box-sizing: border-box;
+  box-shadow:0px 0px 10px purple;
+}
+
+body
+{
+  font-family: 'Poppins', sans-serif;
+}
+
+/*body
+{
+  background-image: url("e-grocery image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}*/
+
+
+
+/*.col img
+{
+  opacity: 0.8;
+  position: relative;
+  
+}*/
+
+.sidenav 
+{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 900;
+  top: 0;
+  left: 0;
+  background: #e55d87; 
+  background: -webkit-linear-gradient(to right, #e55d87, #5fc3e4); 
+  background: linear-gradient(to right, #e55d87, #5fc3e4);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  opacity: 0.9;
+}
+
+.sidenav a 
+{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.btn:hover,.active
+{
+  color: #f1f1f1;
+  background-color: purple;
+}
+.dropbtn:hover
+{
+  color: #f1f1f1;
+  background-color: purple;
+}
+
+/*.active
+{
+  color: #f1f1f1;
+  background-color: red;
+}
+*/
+.sidenav .closebtn 
+{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.homecontainer
+{
+  background-image: url("images/search.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: margin-left .5s;
+  padding: 16px;
+
+}
+
+.popularrow .popularcol h3
+{
+  color: white;
+  background-color: purple;
+  text-align: center;
+  align-items: center;
+}
+#maincontainer
+{
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+@media screen and (max-height: 450px) 
+{
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.searchcontainer button
+{
+  position: inherit;
+  border-radius: 20px;
+  border-color: lightgreen;
+  margin: 2% 45%;
+  padding: 10px;
+  background-color: lightgreen;
+}
+
+.searchcontainer #form 
+{
+  background-color: red;
+  color: white;
+  opacity: 0.8;
+  width: 50%;
+  text-align: center;
+  margin: 50px auto;
+  
+}
+
+.searchcontainer #form .radio-inline
+{
+  margin: 10px;
+}
+
+
+#searchcontainer
+{
+  box-sizing: border-box;
+  box-shadow: 0 5px 15px red;
+  background:rgba(255,255,255,0.3);
+  color: white;
+}
+
+input[type=text] {
+
+  width: 100px;
+  box-sizing: border-box;
+  border: 2px solid lightpink;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  width: 50%;
+  /*background-position: 10px 10px; 
+  background-repeat: no-repeat;*/
+
+  padding: 12px 20px 12px 40px;
+  margin: 0 25%;
+}
+.product-row
+{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.small-container
+{
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.product
+{
+  margin-top: 70px 0;
+}
+
+.product-col-4
+{
+  flex-basis: 25%;
+  padding: 20px;
+  min-width: 200px;
+  margin-bottom: 50px;
+}
+
+
+.product-col-4 img
+{
+  
+  width: 100%;
+  transition: transform 0.5s;
+}
+.product-col-4 img:hover
+{
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.product-col-4 .button
+{
+  font-weight: bold;
+  color:white;
+  background-color:purple;
+  border-radius: 50px;
+  margin-top: 5px;
+  padding:5%;
+  width: 100%;
+
+}
+.product-col-4 .button:hover
+{
+  cursor: pointer;
+  color: white;
+  background-color: green;
+  transition: 0.4s;
+  border-color: lightgreen;
+}
+.product-col-4:hover
+{
+  cursor: pointer;
+  border: 1px solid purple;  
+  box-shadow: 0 8px 12px 0 rgba(100,0,100,0.2);
+}
+
+.product-col-4 p, .product-col-4 h4
+{
+  text-align: center;
+
+}
+.product-col-4 p
+{
+  font-weight: bold;
+  background-color: #fd79a8;
+  /*background-color: #5fc3e4;*/
+
+  color: white;
+}
+
+
+.msgForm
+{
+  background: rgba(0,0,255,0.3);
+  opacity: 0.9;
+  font-weight: bold;
+  padding: 30px;
+  margin: 25% auto;
+  border-radius: 10px;
+  box-shadow:0px 0px 10px purple;
+  z-index: 5;
+}
+.adminForm
+{
+  background: rgba(0,0,0,0.3);
+  opacity: 0.9;
+  font-weight: bold;
+  padding: 30px;
+  margin: 25% auto;
+  border-radius: 10px;
+  box-shadow:0px 0px 10px lightgreen;
+  z-index: 5;
+}
+.nav
+{
+  background-color: white;
+}
+
+
+#contact
+{
+  color: #e74c3c;
+  background-image:url("images/contactus.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#admin
+{
+  color: #b5e73c;
+  background-image:url("adminbackground.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+textarea
+{
+  resize: vertical;
+}
+
+#footer
+{
+  color: black;
+  text-align: center;
+}
+#contactfooter
+{
+  min-height: 100%;
+  padding-bottom: 0px;
+
+}
+#contactfooter .row
+{
+  background-color: black;
+  color: white;
+  text-align: center;
+  position: relative;
+  margin-top: -100px;
+  clear: both;
+}
+
+.navicon
+{
+  padding-right: 5px;
+}
+
+.FeaturedProducts .title 
+{
+  text-align: center;
+  color: purple;
+  font-weight: bold;
+  margin: 5% auto;
+  position: relative;
+
+}
+.FeaturedProducts .title::after
+{
+  content: '';
+  background: #ff523b;
+  /*background-color: #5fc3e4;*/
+  width: 100px;
+  position: absolute;
+  height: 5px;
+  left: 48%;
+  border-radius: 20px;
+}
+
+.procedure .title 
+{
+  text-align: center;
+  color: purple;
+  font-weight: bold;
+  margin: 5% auto;
+  position: relative;
+
+}
+.procedure .title::after
+{
+  content: '';
+  background: #ff523b;
+  /*background-color: #5fc3e4;*/
+  width: 100px;
+  position: absolute;
+  height: 5px;
+  left: 48%;
+  border-radius: 20px;
+}
+.processContainer
+{
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.processContainer
+{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.process
+{
+  flex-basis: 25%;
+  padding: 20px;
+  min-width: 100px;
+  margin-bottom: 50px;
+}
+.process img
+{
+  
+  width: 200px;
+  border-radius: 70px;
+  border: 2px solid purple;
+  transition: transform 0.5s;
+}
+.process img:hover
+{
+  transform:translateY(-5px);
+}
+.process p
+{
+  font-size: 16px;
+  color: #ff523b;
+  font-weight: bold;
+
+}
+/*Chatbox css*/
+.open-button 
+{
+  background-color: #ff523b ;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+
+.chat-popup 
+{
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container .btn 
+{
+  background-color: #04AA6D;
+  color: white;
+  padding: 20px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+
+.form-container .cancel 
+{
+  background-color: #ff523b ;
+}
+
+
+.form-container .btn:hover, .open-button:hover 
+{
+  opacity: 1;
+}
+
+.footerContainer
+{
+  max-width:  1170px;
+  margin: auto;
+}
+.footerContainer .row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul
+{
+  list-style: none;
+}
+.footer
+{
+  background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col
+{
+  width: 30%;
+  padding: 0 15px;
+}
+.footer-col h4
+{
+  font-size:  18px;
+  color: #ffffff;
+  
+  margin-bottom: 30px;
+}
+.footer-col li a
+{
+  color: white;
+}
+.footer-col .Links a
+{
+  color: white;
+  background-color: green;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#topbtn 
+{
+  display: none;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 999;
+  border: none;
+  outline: none;
+  background-color: #24262b;
+  color: rgb(37, 185, 223);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  opacity: 0.9;
+  font-size: 1rem;
+  animation: btnease 2s;
+  animation-timing-function: ease;
+}
+@keyframes btnease {
+  from {bottom: 15%;}
+  to {bottom: 5%;}
+}
+
+#topbtn:hover 
+{
+  background-color: #555;
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+/*signIn Dropdown*/
+.dropbtn {
+  position: relative;
+  
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: purple;
+}
+
+.dropdown 
+{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  background-color: purple;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover 
+{
+  background-color: black;
+}
+
+.show {display: block;}
+
+#msghead
+{
+  text-align: center;
+  margin: 5% 20%;
+  padding:0 20% 0 20%; 
+  box-shadow: 0px 8px 16px 0px rgba(0,125,125,0.3);
+}
+
+.msgtable
+{
+  margin: 0 auto;
+}
+table, td
+{
+  font-size: 80%;
+  text-align: center;
+  border: 1px solid black;
+  
+}
+th
+{
+  background-color: #000000;
+  color: #ffffff;
+}

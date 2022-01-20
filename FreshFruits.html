@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hygiene</title>
+		<link rel="icon" type="image/jpg" href="images/icon.jpg">
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+			rel="stylesheet">
+		<style>
+			#loading
+			{
+				overflow: hidden;
+				position: fixed;
+				width: 100%;
+				height: 100vh; 
+				background: #001d30 url("images/loading4.gif") no-repeat center;
+				z-index: 1000;
+				background-size: 40%;
+			}
+			#body
+			{
+				overflow: hidden; 
+			}
+		</style>
+		</head>
+		<body id="body">
+			<div id="loading"></div>
+			<div class="scrollbtn">
+				<button id=topbtn onclick="topFunction()">&#9650;</button>
+			</div>
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a class="btn" href="Popular.html"><img class="navicon" src="images/icons/PopularIcon.png" style="width:20px";>Popular Products</a>
+				<!-- <a class="btn" href="#5"><img class="navicon" src="images/icons/DailyIcon.png" style="width:20px";>Daily Essentials</a> -->
+				<a class="btn" href="Hygiene.html"><img class="navicon" src="images/icons/COVID19Icon.png" style="width:20px";>Hygiene</a>
+				<a class="btn active" href="FreshFuits.html"><img class="navicon" src="images/icons/FruitsIcon.png" style="width:20px";>Fresh Fruits</a>
+				<a class="btn" href="#7"><img class="navicon" src="images/icons/FoodIcon.png" style="width:20px";>Breakfast</a>
+				<a class="btn" href="#8"><img class="navicon" src="images/icons/SnackIcon.png" style="width:20px";>Snacks & Spread</a>
+				<a class="btn" href="#9"><img class="navicon" src="images/icons/DrinksIcon.png" style="width:20px";>Drinks & Beverages</a>
+				<a class="btn" href="#10"><img class="navicon" src="images/icons/BabyIcon.png" style="width:20px";>Baby Care</a>
+				<!-- <a class="btn" href="#11"><img class="navicon" src="images/icons/BodyCareIcon.png" style="width:20px";>Body Care</a> -->
+				<a class="btn" href="#12"><img class="navicon" src="images/icons/HomeCleaningIcon.png" style="width:20px";>Home & Cleaning</a>
+				<a class="btn" href="#13"><img class="navicon" src="images/icons/StationeryIcon.png" style="width:20px";>Stationery</a>
+			</div>
+			<div id="maincontainer" class="topcontainer">
+				<div id="container" class="container">
+					<div class="nav-bar">
+						<div class="e-groceryLogo">
+							<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+							<a href="Home.html" target="_self"><img src="images/e-grocery_logo2.png" width = "125px"></a>
+						</div>
+						<nav id="top-nav">
+							<ul>
+								<li><a class="btn active" href="Home.html" target="_self">Home</a></li>
+								<li><a class="btn" href="#1">About</a></li>
+								<li><a class="btn" href="ContactUs.html">Contact Us</a></li>
+								<li><a onclick="myFunction()" class="dropbtn">Sign In </a>
+								<div id="SignInDropdown" class="dropdown-content">
+									<a href="Login.html">User</a>
+									<a href="AdminLogin.html">Admin</a>
+								</div>
+							</li>
+						</ul>
+					</nav>
+					<a href="#"><img src="images/carticon.jpg" width="50px" height="50px"></a>
+				</div>
+				
+				<div class="popularrow">
+					<div class="popularcol">
+						<div class="popular">
+							<h3>Fresh Fruits</h3>
+							<div class="img"><img src="images/FreshFruits header.jpg" width="300px" height="250px"></div>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="small-container">
+						<div class="product-row">
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/al-dhafra-dates-khejur-400-gm.jpg">
+								<h4>Al Dhafra Dates (Khejur)</h4>
+								<p>400 gm</p>
+								<p> Tk.149</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/banana-chompa-12-pcs.jpg">
+								<h4>Banana Chompa</h4>
+								<p>12 pcs</p>
+								<p> Tk.65</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/banana-sagor-4-pcs.png">
+								<h4>Banana Sagor</h4>
+								<p>4 pcs</p>
+								<p> Tk.39</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/banana-sobri-4-pcs.png">
+								<h4>Banana Sobri</h4>
+								<p>4 pcs</p>
+								<p> Tk.60</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/barari-dates-sealed-500-gm.jpg">
+								<h4>Barari Dates (Sealed)</h4>
+								<p>500 gm</p>
+								<p> Tk.199</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/black-kalmi-safawi-dates-sealed-500-gm.png">
+								<h4>Black Kalmi Safawi Dates (Sealed)</h4>
+								<p>500 gm</p>
+								<p> Tk.495</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/cherry-pineapple-1-pcs.jpg">
+								<h4>Cherry Pineapple</h4>
+								<p>each</p>
+								<p> Tk.19</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/china-fuji-apple-net-weight-50-gm-1-kg.jpg">
+								<h4>China Fuji Apple (Net Weight ± 50 gm)</h4>
+								<p>1 kg</p>
+								<p> Tk.225</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/coconut-1-pcs.jpg">
+								<h4>Coconut</h4>
+								<p>each</p>
+								<p> Tk.99</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/crown-dabbas-dates-1-kg.jpg">
+								<h4>Crown Dabbas Dates</h4>
+								<p>1 kg</p>
+								<p> Tk.349</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/dragon-fruit-thai-net-weight-100-gm-11-kg.jpg">
+								<h4>Dragon Fruit Thai (Net Weight ± 100 gm)</h4>
+								<p>1.1 kg</p>
+								<p> Tk.549</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/gala-apple-net-weight-50-gm-1-kg.jpg">
+								<h4>Gala Apple (Net Weight ± 50 gm)</h4>
+								<p>1 kg</p>
+								<p> Tk.199</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/green-apple-net-weight-50-gm-1-kg.jpg">
+								<h4>Green Apple (Net Weight ± 50 gm)</h4>
+								<p>1 kg</p>
+								<p> Tk.259</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/green-coconut-daab-1-pcs.jpg">
+								<h4>Green Coconut (Daab)</h4>
+								<p>each</p>
+								<p> Tk.89</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/green-grapes-250-gm.jpg">
+								<h4>Green Grapes</h4>
+								<p>250 gm</p>
+								<p> Tk.99</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/green-mango-1-kg.jpg">
+								<h4>Green Mango</h4>
+								<p>1 kg</p>
+								<p> Tk.45</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/guava-thai-net-weight-50-gm-1-kg.jpg">
+								<h4>Guava Thai (Net Weight ± 50 gm)</h4>
+								<p>1 kg</p>
+								<p> Tk.99</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/honeydew-melon-1-pc.png">
+								<h4>Honeydew (Melon)</h4>
+								<p>1 pc</p>
+								<p> Tk.299</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/java-plum-jaam-500-gm.jpg">
+								<h4>Java Plum (Jaam)</h4>
+								<p>500 gm</p>
+								<p> Tk.129</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/kamranga-net-weight-50-gm-500-gm.jpg">
+								<h4>Kamranga (Net Weight ± 50 gm)</h4>
+								<p>500 gm</p>
+								<p> Tk.99</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/khass-food-mariyum-dates-500-gm.jpg">
+								<h4>Khass Food Mariyum Dates</h4>
+								<p>500 gm</p>
+								<p> Tk.549</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/lychee-kodmi-50-pcs.png">
+								<h4>Lychee Kodmi</h4>
+								<p>50 pcs</p>
+								<p> Tk.199</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/mabroom-al-madina-premium-dates-sealed-500-gm.png">
+								<h4>Mabroom Al Madina Premium Dates (Sealed)</h4>
+								<p>500 gm</p>
+								<p> Tk.675</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/malta-net-weight-50-gm-1-kg.jpg">
+								<h4>Malta (Net Weight ± 50 gm)</h4>
+								<p>1 kg</p>
+								<p> Tk.169</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/malta-special-offer-net-weight-50-gm-2-kg.jpg">
+								<h4>Malta (Special Offer)  (Net Weight ± 50 gm)</h4>
+								<p>2 kg</p>
+								<p> Tk.339</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/mango-gobindobhog-net-weight-50-gm-3-kg.jpg">
+								<h4>Mango GobindoBhog (Net Weight ± 50 gm)</h4>
+								<p>3 kg</p>
+								<p> Tk.349</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/mango-gopalbhog-net-weight-50-gm-3-kg.jpg">
+								<h4>Mango Gopalbhog (Net Weight ± 50 gm)</h4>
+								<p>3 kg</p>
+								<p> Tk.249</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/mango-himshagor-net-weight-50-gm-3-kg.jpg">
+								<h4>Mango Himshagor (Net Weight ± 50 gm)</h4>
+								<p>3 kg</p>
+								<p> Tk.329</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/mango-langra-net-weight-50-gm-3-kg.jpg">
+								<h4>Mango Langra (Net Weight ± 50 gm)</h4>
+								<p>3 kg</p>
+								<p> Tk.269</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/mariam-al-madina-premium-dates-sealed-500-gm.png">
+								<h4>Mariam Al Madina Premium Dates (Sealed)</h4>
+								<p>500 gm</p>
+								<p> Tk.555</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/musk-melon-bangi-1-pcs.png">
+								<h4>Musk Melon (Bangi)</h4>
+								<p>each</p>
+								<p> Tk.79</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/orange-south-africa-1-kg.jpg">
+								<h4>Orange (South Africa)</h4>
+								<p>1 kg</p>
+								<p> Tk.299</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/paka-pape-net-weight-50-gm-1-kg.jpg">
+								<h4>Paka Pape (Net Weight ± 50 gm)</h4>
+								<p>1 kg</p>
+								<p> Tk.159</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/pear-white-nashpati-net-weight-30-gm-500-gm.jpg">
+								<h4>Pear (White Nashpati) Net Weight (± 30 gm)</h4>
+								<p>500 gm</p>
+								<p> Tk.155</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/pear-green-nashpati-net-weight-30-gm-600-gm.png">
+								<h4>Pear Green (Nashpati) Net Weight (± 30 gm)</h4>
+								<p>600 gm</p>
+								<p> Tk.179</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/pineapple-1-pcs.jpg">
+								<h4>Pineapple</h4>
+								<p>each</p>
+								<p> Tk.59</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/pomegranate-net-weight-50-gm-700-gm.jpg">
+								<h4>Pomegranate (Net Weight ± 50 gm)</h4>
+								<p>700 gm</p>
+								<p> Tk.259</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/red-grapes-250-gm.jpg">
+								<h4>Red Grapes</h4>
+								<p>250 gm</p>
+								<p> Tk.149</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/rockmelon-1-pc.png">
+								<h4>Rockmelon</h4>
+								<p>1  pc</p>
+								<p> Tk.269</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/sapodilla-sofeda-1-kg.png">
+								<h4>Sapodilla (Sofeda)</h4>
+								<p>1 kg</p>
+								<p> Tk.119</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/seasonal-mixed-fruit-platter-320-gm.jpg">
+								<h4>Seasonal Mixed Fruit Platter</h4>
+								<p>320 gm</p>
+								<p> Tk.149</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/watermelon-black-4-kg-1-pc.jpg">
+								<h4>Watermelon Black (4 kg +)</h4>
+								<p>1 pc</p>
+								<p> Tk.349</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/watermelon-large-5-kg-1-pc.jpg">
+								<h4>Watermelon Large (5 kg +)</h4>
+								<p>1 pc</p>
+								<p> Tk.299</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/watermelon-medium-4-kg-pc.jpg">
+								<h4>Watermelon Medium (4 kg +)  pc</h4>
+								<p></p>
+								<p> Tk.259</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/watermelon-small-3-kg-pc.png">
+								<h4>Watermelon Small  (3 kg +)  pc</h4>
+								<p></p>
+								<p> Tk.159</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							<div class="product-col-4">
+								<img src="images/img/Food_FreshFruits/wood-apple-bel-1-pcs.jpg">
+								<h4>Wood Apple (Bel)</h4>
+								<p>each</p>
+								<p> Tk.79</p>
+								<button class="button">Add to Cart</button>
+							</div>
+							
+						</div>
+					</div>
+					<script src="script.js"></script>
+					
+				</body>
+			</html>
